@@ -19,3 +19,6 @@ export PATH=~/miniconda3/bin:$PATH
 
 # alias for a-vim-story
 alias avimstory="$HOME/coding_practice/a-vim-story/build/bin/a-vim-story"
+
+# Java home
+export JAVA_HOME=$(/usr/libexec/java_home)
