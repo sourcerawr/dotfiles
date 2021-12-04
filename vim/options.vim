@@ -4,6 +4,8 @@
 
 set nocompatible                        " improved mode
 
+" true tone
+
 set number                              " line numbers
 set relativenumber                      " make the numbers relative
 set scrolloff=5                         " leave space at start and end

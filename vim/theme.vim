@@ -1,6 +1,6 @@
 " --------------------------------------------------
 " Vimrc file
-" Author: Utkarsh Maheshwari (github.com/UtkarshMe)
+" Author: Ashwary Sharma
 " --------------------------------------------------
 
 " Nvim specific stuff
@@ -14,19 +14,23 @@ if (has("termguicolors"))
 endif
 
 
+" setting things
+colorscheme onehalflight
+let g:airline_theme='onehalfdark'
+
+
 "if g:has_vundle == v:true
-if v:false
-    set background=dark
-    let theme = 'gruvbox'
-    "colorscheme gruvbox
+"if v:false
+    "set background=dark
+    "let theme = 'gruvbox'
+    ""colorscheme gruvbox
 
-    if theme == 'material'
-        let g:material_theme_style = &background
-    elseif theme == 'gruvbox'
-        let g:gruvbox_contrast_dark = 'hard'
-        set cursorline
-    endif
+    "if theme == 'material'
+        "let g:material_theme_style = &background
+    "elseif theme == 'gruvbox'
+        "let g:gruvbox_contrast_dark = 'hard'
+        "set cursorline
+    "endif
 
-    let g:airline_theme = theme
-
-endif
+    "let g:airline_theme = theme
+"endif
