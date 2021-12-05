@@ -17,8 +17,17 @@ nnoremap <s-tab> <<
 vnoremap <tab> >
 vnoremap <s-tab> <
 
+"nerd tree things
+nnoremap <C-n> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+"tagbar things
+nmap <leader>t :TagbarToggle<CR>
+
 "for searching using dash.app with the plugin
-nnoremap <leader>ds :Dash <enter>
+"nnoremap <leader>ds :Dash <enter>
 
 "for running selected python code
 "autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:ter python2 "%"<CR>

@@ -16,7 +16,7 @@ endif
 
 " setting things
 colorscheme onehalflight
-let g:airline_theme='onehalfdark'
+let g:airline_theme='onehalf'
 
 
 "if g:has_vundle == v:true

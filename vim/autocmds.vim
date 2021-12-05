@@ -1,5 +1,13 @@
 " Autocmds file
 
+" Nerdtree
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+
+" cursor fix for all terminals
+"set guicursor=
+autocmd VimLeave * set guicursor=a:hor20
+
 " remember last position in file
 autocmd BufReadPost * if line("'\'") > 0 && line("'\'") <= line("$")
             \ | exe "normal g'\"" | endif
