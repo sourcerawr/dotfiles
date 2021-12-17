@@ -18,8 +18,8 @@ function! s:CloseIfOnlyNerdTreeLeft()
   endif
 endfunction
 
-" cursor fix for all terminals
-"set guicursor=
+"cursor fix for all terminals
+set guicursor=
 autocmd VimLeave * set guicursor=a:hor20
 
 " remember last position in file

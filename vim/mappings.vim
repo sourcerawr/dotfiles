@@ -17,7 +17,7 @@ nnoremap <s-tab> <<
 vnoremap <tab> >
 vnoremap <s-tab> <
 
-"github help
+"github
 nnoremap <silent> <Leader>vgd :Gvdiffsplit<CR>
 
 " accha fzf and Ag and Rg things

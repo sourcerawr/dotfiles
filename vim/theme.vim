@@ -15,8 +15,10 @@ endif
 
 
 " setting things
-colorscheme onehalflight
-let g:airline_theme='onehalf'
+
+"Airline theme
+"colorscheme one
+let g:airline_theme='one'
 
 
 "if g:has_vundle == v:true
