@@ -1,0 +1,11 @@
+24.07.24
+Hmm - nice git diff, file search etc
+Copilot is working too
+
+Now
+1. Code parsing - language parsing and help etc - let's see
+2. File search etc
+
+
+Use case
+Lightweight code editor to do editing and just fun to use man
