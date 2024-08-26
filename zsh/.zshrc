@@ -14,6 +14,21 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 
+# Setup fzf
+if [[ ! "$PATH" == */opt/local/share/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/opt/local/share/fzf/bin"
+fi
+
+# Auto-completion
+[[ $- == *i* ]] && source "/opt/local/share/fzf/shell/completion.zsh" 2> /dev/null
+
+# Key bindings
+source "/opt/local/share/fzf/shell/key-bindings.zsh"
+
+# start vim mode
+bindkey -v
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
