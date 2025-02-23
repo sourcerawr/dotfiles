@@ -15,15 +15,15 @@ unset __conda_setup
 
 
 # Setup fzf
-if [[ ! "$PATH" == */opt/local/share/fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/opt/local/share/fzf/bin"
+if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
 fi
 
 # Auto-completion
-[[ $- == *i* ]] && source "/opt/local/share/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
-source "/opt/local/share/fzf/shell/key-bindings.zsh"
+source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
 
 # start vim mode
 bindkey -v
