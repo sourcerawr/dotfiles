@@ -36,6 +36,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# google cloud completions
+source '/opt/local/libexec/google-cloud-sdk/completion.zsh.inc'
+
 # let's activate brew installed antigen
 source $(brew --prefix)/share/antigen/antigen.zsh
 
@@ -44,7 +47,8 @@ source $(brew --prefix)/share/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
-
+# git shortcut commands like gaa, gc, gp
+antigen bundle zsh-users/git
 # let's load powerlevel10k
 antigen theme romkatv/powerlevel10k
 

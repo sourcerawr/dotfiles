@@ -1,5 +1,5 @@
 "Plugin file for VIM, for smooth workflow
-tUsing Vundle as the plugin manager
+"Using Vundle as the plugin manager
 
 set nocompatible                                " Required for vundle
 filetype off                                    " Required for vundle
