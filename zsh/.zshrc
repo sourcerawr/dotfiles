@@ -37,7 +37,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # google cloud completions
-source '/opt/local/libexec/google-cloud-sdk/completion.zsh.inc'
+# source '/opt/local/libexec/google-cloud-sdk/completion.zsh.inc'
+
+# nvm setup
+if [ -d "/opt/homebrew/opt/nvm" ]; then
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+fi
 
 # let's activate brew installed antigen
 source $(brew --prefix)/share/antigen/antigen.zsh
